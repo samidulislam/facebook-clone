@@ -1,0 +1,47 @@
+.sidebar {
+  width: 100%;
+  max-width: 280px;
+  min-height: inherit;
+  max-height: inherit;
+  padding: 1.3em 0 1.3em 1em;
+  height: inherit;
+  overflow-y: scroll;
+  position: sticky;
+  top: 0
+}
+
+.sidebar .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: .6em .5em;
+  border-radius: 3px;
+  cursor: pointer;
+  gap: .3em;
+}
+.sidebar .item:hover {
+  background: var(--white);
+}
+
+.sidebar .item svg {
+  font-size: 1.5em;
+  color: var(--primary);
+}
+.sidebar .item span {
+  font-size: 1.05em;
+  font-weight: 300;
+}
+
+.sidebar .see-more svg {
+  background: #bfbfbf;
+  color: var(--black);
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}

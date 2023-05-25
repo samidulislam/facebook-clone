@@ -1,0 +1,103 @@
+.post {
+  background: var(--white);
+  border-radius: 7px;
+}
+
+.post .top {
+  width: 100%;
+  padding: 0.8em 0.9em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
+}
+.post .top .left {
+  flex: 1;
+  display: flex;
+  gap: 0.5em;
+}
+
+.post .top .right {
+  /* No Codes */
+}
+
+/* Left */
+.post .top .left .post-details {
+  display: flex;
+  flex-direction: column;
+}
+.post .top .left .post-details .username {
+  cursor: pointer;
+  font-weight: 500;
+}
+.post .top .left .post-details .timestamp {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.post .top .right svg {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.post .top .right svg:hover {
+  background: var(--light);
+}
+
+/* Content */
+.post .content {
+  /* No codes */
+}
+.post .content p {
+  padding: 0 0.9em 0.7em;
+  font-size: 0.94em;
+}
+
+.post .content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Bottom */
+.post .bottom {
+  width: 100%;
+  padding: 0 0.9em 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post .bottom .end {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.post .bottom .end .item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+  cursor: pointer;
+  padding: 0.4em 0;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+.post .bottom .end .item:hover {
+  background: var(--light);
+}
+.post .bottom .end .item svg {
+  font-size: 1.6em;
+}
+.post .bottom .end .item span {
+  font-size: 1.1em;
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  .post {
+      border-radius: unset;
+  }
+}

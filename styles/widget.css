@@ -1,0 +1,39 @@
+.widget {
+  width: 100%;
+  max-width: 300px;
+  max-height: inherit;
+  padding: 1.3em 1em 1.3em 0;
+  position: sticky;
+  top: 0;
+}
+
+.widget h3 {
+  padding-left: 0.6em;
+}
+
+.widget .item {
+  padding: 0.6em 0.6em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: .6em;
+}
+.widget .item svg {
+  width: 26px;
+  height: 26px;
+  padding: 3px;
+  background: #efefef;
+  border-radius: 50%;
+}
+
+.widget .item:hover {
+  background: var(--white);
+}
+
+@media (max-width: 900px) {
+  .widget {
+    display: none;
+  }
+}

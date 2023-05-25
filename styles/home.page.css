@@ -1,0 +1,11 @@
+.home {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
+  background: #dfdfdf;
+  display: flex;
+  overflow-y: scroll;
+}
+.home::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,23 @@
+.feed {
+    flex: 1;
+    height: inherit;
+    padding: 1.3em 4em 0;
+    /* margin-bottom: 2em; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+@media (max-width: 720px) {
+    .feed {
+        padding: 1.3em 1em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .feed {
+        padding: 1.3em 0 0;
+    }
+}
